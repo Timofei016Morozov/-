@@ -1,7 +1,6 @@
 #include <iostream>
 
 int main() {
-
     setlocale(LC_ALL, "Russian");
     double num1, num2, result;
     char operation;
@@ -17,10 +16,10 @@ int main() {
         std::cout << "¬ведите второе число: ";
         std::cin >> num2;
     }
-    else {
-        num2 = 0; 
+    if (operation == '%') {
+        std::cout << "¬ведите процент, который вы хотите найти: ";
+        std::cin >> num2; 
     }
-
     if (operation == '+') {
         result = num1 + num2;
         std::cout << "–езультат: " << num1 << " + " << num2 << " = " << result << std::endl;
